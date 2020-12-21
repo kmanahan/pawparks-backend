@@ -1,7 +1,3 @@
 class ParkShowSerializer < ActiveModel::Serializer
-  attributes :id, :name, :url, :lat, :long, :imageUrl, :address
+  attributes :id, :name, :url, :lat, :long, :image_url, :address
 end
-
-def imageUrl
-  object.image_url
-end 
