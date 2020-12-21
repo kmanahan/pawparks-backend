@@ -1,4 +1,6 @@
 class Park < ApplicationRecord
+    has_many :reviews
+    has_many :parks, through: :reviews
 
     def self.get_parks(location)
         res = Search.new(location)
